@@ -5,11 +5,11 @@ let navLine = document.querySelector('.nav-line'),
     sliders = document.querySelectorAll('.slider-item')
 
 
-window.onload = function() {
+// window.onload = function() {
     setTimeout(() => {
         navLine.classList.add('showLine')
-    }, 1000);
-}
+    }, 500);
+// }
 
 
 menuBurger.addEventListener('click', () => {
