@@ -8,6 +8,7 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     overflow-x: hidden;
@@ -128,14 +129,16 @@ a {
         padding-right: 200px;
     }
     &__text1 {
-        padding-left: 100px;
+        &::first-letter {
+            padding-left: 80px;
+        }
     }
     &-slider {
         margin-top: 120px;
         &-left {
             height: 670px;
             &-bg {
-                width: 150%;
+                width: 300%;
                 height: 100%;
                 top: 0;
                 right: -12px;
@@ -171,10 +174,21 @@ a {
                     position: absolute;
                     left: 0;
                     top: 0;
-                    width: 150%;
+                    width: 300%;
                     height: 100%;
                     background-color: #fff;
                 }
+            }
+            .arrow {
+                position: absolute;
+                z-index: 5;
+                top: 50%;
+            }
+            .arrow1 {
+                left: 52%;
+            }
+            .arrow2 {
+                left: 72%;
             }
         }
         .slider-item {
@@ -207,6 +221,13 @@ a {
         right: -100%;
         z-index: 999;
         transition: .5s all;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 0px !important;
+        }
+        &__link {
+            font-size: 28px;
+        }
         .nav {
             position: relative;
             background: transparent;
@@ -295,3 +316,52 @@ a {
         right: 0;
     }
 }
+
+
+
+.slick-dots {
+    position: absolute;
+    bottom: -130px !important;
+    left: 50px;
+}
+.slick-dots li {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    border: 1px solid #bdc3c7 !important;
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &:first-child::before {
+        content: '01';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+    }
+    &:nth-child(2)::before {
+        content: '02';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+    }
+    &:last-child::before {
+        content: '03';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+    }
+}
+.slick-dots li.slick-active {
+    border: 1px solid #20232a !important;
+}
+
+
+@import './media'

@@ -21,22 +21,51 @@ closeMenu.addEventListener('click', () => {
 });
 
 
-let i = 0;
+// let i = 0;
 
-function sliderMove() {
-    if (i == sliders.length - 1) {
-        sliders[i].style.display = "none";
-        i = 0;
-        sliders[i].style.display = "block";
-    } else {
-        sliders[i].style.display = "none";
-        sliders[i + 1].style.display = "block";
-        i++
-    }
-}
+// function sliderMove() {
+//     if (i == sliders.length - 1) {
+//         sliders[i].style.display = "none";
+//         i = 0;
+//         sliders[i].style.display = "block";
+//     } else {
+//         sliders[i].style.display = "none";
+//         sliders[i + 1].style.display = "block";
+//         i++
+//     }
+// }
 
 
 
-setInterval(function () {
-    sliderMove();
-}, 2000)
+// setInterval(function () {
+//     sliderMove();
+// }, 2000)
+
+$('.slider-left').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false, 
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    asNavFor: '.slider-right'
+})
+
+
+$('.slider-right').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true, 
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    asNavFor: '.slider-left',
+})
