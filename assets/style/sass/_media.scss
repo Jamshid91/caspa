@@ -109,13 +109,10 @@
             margin-bottom: 30px !important;
         }
         &:not(:last-child)::after {
-            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-            font-weight: 600;
             content: '\f107';
-            position: absolute;
+            left: 12px;
             bottom: -32px;
             color: #fff;
-            font-size: 20px;
         }
         &:first-child::before {
             color: #fff;

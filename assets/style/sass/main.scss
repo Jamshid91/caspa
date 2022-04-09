@@ -512,6 +512,17 @@ a {
     &:not(:last-child) {
         margin-right: 40px;
     }
+    
+    &:not(:last-child)::after {
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 600;
+        content: '\f105';
+        position: absolute;
+        left: 55px;
+        bottom: 5px;
+        color: #bdc3c7;
+        font-size: 20px;
+    }
 
     &:first-child::before {
         content: '01';

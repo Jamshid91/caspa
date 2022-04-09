@@ -663,6 +663,17 @@ a {
   margin-right: 40px;
 }
 
+.slick-dots li:not(:last-child)::after {
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 600;
+  content: '\f105';
+  position: absolute;
+  left: 55px;
+  bottom: 5px;
+  color: #bdc3c7;
+  font-size: 20px;
+}
+
 .slick-dots li:first-child::before {
   content: '01';
   position: absolute;
@@ -817,13 +828,10 @@ a {
     margin-bottom: 30px !important;
   }
   .slick-dots li:not(:last-child)::after {
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-    font-weight: 600;
     content: '\f107';
-    position: absolute;
+    left: 12px;
     bottom: -32px;
     color: #fff;
-    font-size: 20px;
   }
   .slick-dots li:first-child::before {
     color: #fff;
