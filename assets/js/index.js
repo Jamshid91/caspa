@@ -46,6 +46,7 @@ $('.slider-right').slick({
 
 
 const reliability = document.querySelector('.reliability-right');
+const stability = document.querySelector('.stability-left');
 
 
 if (window.matchMedia("(min-width: 992px)").matches) {
@@ -54,15 +55,16 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     }, 500);
 
     window.addEventListener('scroll', () => {
-
-
-
         const positionReliability = reliability.getBoundingClientRect().top;
+        const positionStability = stability.getBoundingClientRect().top;
     
         const screenPosition = window.innerHeight;
     
         if(screenPosition > positionReliability) {
             reliability.classList.add('showReliability')
+          }
+          if(screenPosition > positionStability) {
+            stability.classList.add('showStability')
           }
     });
 }
