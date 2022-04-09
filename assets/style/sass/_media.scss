@@ -228,6 +228,16 @@
             }
         }
     }
+
+    
+    .main {
+        &-item {
+            width: 50%;
+        }
+        &-item-big {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -449,6 +459,32 @@
             }
             &-arrow {
                 margin-top: 120px;
+            }
+        }
+    }
+
+        
+    .main {
+        &-list {
+        &-info {
+            &-box {
+                padding: 5px;
+                &__text {
+                    font-size: 10px;
+                }
+            }
+        }
+        &-text {
+            padding: 10px 25px;
+        }
+        }
+    }
+    .main-list-big {
+        height: 350px !important;
+        .main-list-info {
+            height: 200px !important;
+            .main-list-info-box__text {
+                width: 50%;
             }
         }
     }

@@ -34,6 +34,6 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     gsap.from('.completed-projects-left__title', { opacity: 0, duration: .4, delay: .2, y: 40, scrollTrigger: '.completed-projects-right-item'});
     gsap.from('.completed-projects-left__title2', { opacity: 0, duration: .4, delay: .3, y: 40, scrollTrigger: '.completed-projects-right-item'});
     gsap.from('.completed-projects-left__title3', { opacity: 0, duration: .4, delay: .4, y: 40, scrollTrigger: '.completed-projects-right-item'});
-    gsap.from('.completed-projects-left-arrow', {duration: .4, delay: .5, y: -250, scrollTrigger: '.completed-projects-right-item'});
+    gsap.from('.completed-projects-left-arrow', {duration: .8, delay: .5, y: -250, scrollTrigger: '.completed-projects-right-item'});
     gsap.from('.completed-projects-right__btn', { opacity: 0, duration: .4, delay: .3, y: 20, scrollTrigger: '.completed-projects-right__btn'});
   }

@@ -497,6 +497,69 @@ a {
     }
 }
 
+.main {
+    &-item {
+        width: 25%;
+    }
+    &-item-big {
+        width: 50%;
+        .main-list {
+            width: 50%;
+        }
+    }
+    &-list {
+        height: 300px;
+       &-info {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: 100% 100%;
+        }
+        &-box {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            bottom: -100%;
+            left: 0;
+            padding: 20px;
+            transition: .5s all;
+            z-index: 2;
+            &__text {
+                font-size: 13px;
+            }
+        }
+       }
+       &-text {
+           height: 150px;
+           padding: 20px;
+       }
+       &:hover .main-list-info-box {
+           bottom: 0;
+       }
+    }
+    .big-list {
+        height: 450px;
+        &-info {
+            height: 300px;
+        }
+    }
+    .main-list-big {
+        width: 100%;
+        height: 450px;
+        .main-list-info {
+            height: 300px;
+            .main-list-info-box__text {
+                width: 50%;
+            }
+        }
+    }
+}
 
 .slick-dots {
     position: absolute;
