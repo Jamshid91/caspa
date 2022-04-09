@@ -47,6 +47,8 @@ $('.slider-right').slick({
 
 const reliability = document.querySelector('.reliability-right');
 const stability = document.querySelector('.stability-left');
+const stability2 = document.querySelector('.stability2-right');
+const completedProjects = document.querySelector('.completed-projects-left');
 
 
 if (window.matchMedia("(min-width: 992px)").matches) {
@@ -57,6 +59,8 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     window.addEventListener('scroll', () => {
         const positionReliability = reliability.getBoundingClientRect().top;
         const positionStability = stability.getBoundingClientRect().top;
+        const positionStability2 = stability2.getBoundingClientRect().top;
+        const positionCompletedProjects = completedProjects.getBoundingClientRect().top;
     
         const screenPosition = window.innerHeight;
     
@@ -65,6 +69,12 @@ if (window.matchMedia("(min-width: 992px)").matches) {
           }
           if(screenPosition > positionStability) {
             stability.classList.add('showStability')
+          }
+          if(screenPosition > positionStability2) {
+            stability2.classList.add('showStability2')
+          }
+          if(screenPosition > positionCompletedProjects) {
+            completedProjects.classList.add('showCompletedProjects')
           }
     });
 }

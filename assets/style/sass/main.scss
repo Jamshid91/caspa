@@ -318,7 +318,8 @@ a {
 }
 
 
-.reliability {
+.reliability,
+.stability2 {
     background-color: #fff;
     &-left {
         width: 40%;
@@ -380,8 +381,24 @@ a {
 }
 // End reliability
 
+.stability2 {
+    &-right {
+        background: #e30613;
+        &-sub {
+            &__img {
+                width: 60px;
+            }
+        }
+    }
+    .showStability2 {
+        width: 60%;
+        height: 650px;
+    }
+}
 
-.stability {
+
+.stability,
+.completed-projects {
     background-color: #fff;
     &-right {
         width: 40%;
@@ -424,7 +441,7 @@ a {
                 font-size: 14px;
             }
             &__img {
-                width: 90px;
+                width: 130px;
             }
             &__btn {
                 width: auto;
@@ -442,6 +459,43 @@ a {
     }
 }
 // End stability
+
+.completed-projects {
+    &-left {
+        background-color: #20222b;
+        padding-top: 100px;
+        &__title {
+            font-size: 150px;
+            font-weight: 700;
+            line-height: 150px;
+        }
+        &__title2,
+        &__title3 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 30px;
+
+        }
+        &-arrow {
+            margin-top: 200px;
+        }
+    }
+    &-right {
+        &__btn {
+            width: auto;
+            height: auto;
+            padding: 5px 15px;
+            border: 1px solid #20232a;
+            color: #20232a;
+            background: transparent;
+            border-radius: 30px;
+        }
+    }
+    .showCompletedProjects {
+        width: 60%;
+        height: 650px;
+    }
+}
 
 
 .slick-dots {
