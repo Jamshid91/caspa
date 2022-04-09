@@ -14,4 +14,10 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     gsap.from('.wrapper__text2', { opacity: 0, duration: .5, delay: 2.5, y: 30});
     gsap.from('.wrapper__text3', { opacity: 0, duration: .5, delay: 2.6, y: 30});
     gsap.from('.wrapper__text4', { opacity: 0, duration: .5, delay: 2.7, y: 30});
+    gsap.from('.wrapper__btn1', { opacity: 0, duration: .5, delay: 1, y: 20, scrollTrigger: '.wrapper__btn1'});
+    gsap.from('.wrapper__btn2', { opacity: 0, duration: .5, delay: 1.3, y: 20, scrollTrigger: '.wrapper__btn2'});
+    gsap.from('.reliability-right__title1', { opacity: 0, duration: .4, delay: 2, y: 40, scrollTrigger: '.reliability-right__title1'});
+    gsap.from('.reliability-right__title2', { opacity: 0, duration: .4, delay: 2.1, y: 40, scrollTrigger: '.reliability-right__title2'});
+    gsap.from('.reliability-right__title3', { opacity: 0, duration: .4, delay: 2.2, y: 40, scrollTrigger: '.reliability-right__title3'});
+    gsap.from('.reliability-right__text', { opacity: 0, duration: .4, delay: 2.3, y: 40, scrollTrigger: '.reliability-right__text'});
   }
