@@ -49,6 +49,8 @@ const reliability = document.querySelector('.reliability-right');
 const stability = document.querySelector('.stability-left');
 const stability2 = document.querySelector('.stability2-right');
 const completedProjects = document.querySelector('.completed-projects-left');
+const openAllLine = document.querySelector('.main-openAll-line');
+const footerLine = document.querySelector('.footer-sub-line');
 
 
 if (window.matchMedia("(min-width: 992px)").matches) {
@@ -61,6 +63,8 @@ if (window.matchMedia("(min-width: 992px)").matches) {
         const positionStability = stability.getBoundingClientRect().top;
         const positionStability2 = stability2.getBoundingClientRect().top;
         const positionCompletedProjects = completedProjects.getBoundingClientRect().top;
+        const positionOpenAllLine = openAllLine.getBoundingClientRect().top;
+        const positionFooterLine = footerLine.getBoundingClientRect().top;
     
         const screenPosition = window.innerHeight;
     
@@ -76,6 +80,104 @@ if (window.matchMedia("(min-width: 992px)").matches) {
           if(screenPosition > positionCompletedProjects) {
             completedProjects.classList.add('showCompletedProjects')
           }
+          if(screenPosition > positionOpenAllLine) {
+            openAllLine.classList.add('w-100')
+          }
+          if(screenPosition > positionFooterLine) {
+            footerLine.classList.add('w-100')
+          }
     });
 }
 
+
+
+const mainOpenAll = document.querySelector('.main-openAll');
+const mainOpenAllBtn = document.querySelector('.main-openAll__btn');
+const projectArchiveBtn = document.querySelector('.project-archive__btn');
+const mainAll = document.querySelector('.main-all');
+
+
+mainOpenAllBtn.addEventListener('click', () => {
+    mainAll.classList.add('showMainAll');
+    mainOpenAll.classList.add('d-none')
+});
+projectArchiveBtn.addEventListener('click', () => {
+    mainAll.classList.add('showMainAll');
+    mainOpenAll.classList.add('d-none')
+});
+
+
+let form = document.getElementById('form');
+let userName = document.getElementById('userName');
+let userEmail = document.getElementById('userEmail');
+let message = document.getElementById('message');
+let submitBtn = document.getElementById('submitForm')
+
+
+submitBtn.addEventListener('click', () => {
+  checkInputs()
+
+  let successName = userName.parentElement.children[2].classList;
+  let successEmail = userEmail.parentElement.children[2].classList;
+  let successMessage = message.parentElement.children[2].classList;
+
+  if(successName == 'success' && successEmail == 'success' && successMessage == 'success') {
+
+    submitBtn.type = 'submit'
+  }
+});
+
+
+
+function checkInputs() {
+  const userNameValue = userName.value.trim();
+  const userEmailValue = userEmail.value.trim();
+  const messageValue = message.value.trim();
+
+
+  if(userNameValue === '' || userNameValue.length <= 2) {
+    setErrorFor(userName, "1px solid tomato", 'Введите ваше имя')
+  } else {
+    setSuccesFor(userName)
+    userName.parentElement.children[2].classList.add('success')
+  }
+
+  if(userEmailValue === '') {
+    setErrorFor(userEmail, "1px solid tomato", 'Введите ваше эл. почта')
+  }
+  else if(!isEmail(userEmailValue)) {
+    setErrorFor(userEmail, "1px solid tomato", 'Некорректный эл. почта')
+  }
+  else {
+    setSuccesFor(userEmail)
+    userEmail.parentElement.children[2].classList.add('success')
+  }
+  
+  if(messageValue === '') {
+    setErrorFor(message, "1px solid tomato", 'Добавьте описание')
+  }
+  else {
+    setSuccesFor(message)
+    message.parentElement.children[2].classList.add('success')
+  }
+}
+
+function setErrorFor(input, border, message) {
+let small = input.parentElement.children[2]
+
+    input.style.borderBottom = border
+    small.innerText = message
+}
+
+function setSuccesFor(input) {
+    let small = input.parentElement.children[2]
+
+    input.style.borderBottom = '1px solid #11a192'
+    input.classList.add('inputSucces');
+    small.innerText = ''
+
+} 
+
+function isEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}

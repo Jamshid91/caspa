@@ -36,4 +36,23 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     gsap.from('.completed-projects-left__title3', { opacity: 0, duration: .4, delay: .4, y: 40, scrollTrigger: '.completed-projects-right-item'});
     gsap.from('.completed-projects-left-arrow', {duration: .8, delay: .5, y: -250, scrollTrigger: '.completed-projects-right-item'});
     gsap.from('.completed-projects-right__btn', { opacity: 0, duration: .4, delay: .3, y: 20, scrollTrigger: '.completed-projects-right__btn'});
+    gsap.from('.order__title', { opacity: 0, duration: .4, delay: .1, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order1', { opacity: 0, duration: .4, delay: .2, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order2', { opacity: 0, duration: .4, delay: .3, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order3', { opacity: 0, duration: .4, delay: .4, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order4', { opacity: 0, duration: .4, delay: .5, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order5', { opacity: 0, duration: .4, delay: .6, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order6', { opacity: 0, duration: .4, delay: .7, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order7', { opacity: 0, duration: .4, delay: .8, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.order8', { opacity: 0, duration: .4, delay: .9, y: 20, scrollTrigger: '.form__btn'});
+    gsap.from('.footer__phone', { opacity: 0, duration: .4, delay: 1, y: 40, scrollTrigger: '.footer-box'});
+    gsap.from('.footer__email', { opacity: 0, duration: .4, delay: 1.1, y: 40, scrollTrigger: '.footer-box'});
+    gsap.from('.formBtn', { opacity: 0, duration: .4, delay: 1.5, y: 20, scrollTrigger: '.footer-box'});
+    gsap.from('.footerLink1', { opacity: 0, duration: .5, delay: .6, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink2', { opacity: 0, duration: .5, delay: .8, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink3', { opacity: 0, duration: .5, delay: 1, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink4', { opacity: 0, duration: .5, delay: 1.2, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink5', { opacity: 0, duration: .5, delay: 1.4, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink6', { opacity: 0, duration: .5, delay: 1.6, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink7', { opacity: 0, duration: .5, delay: 1.8, y: 20, scrollTrigger: '.footer-icons'});
   }

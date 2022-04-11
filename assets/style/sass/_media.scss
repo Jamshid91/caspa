@@ -237,11 +237,63 @@
         &-item-big {
             width: 100%;
         }
+        &-brends {
+            &-item {
+                width: 25%;
+                height: 200px;
+            }
+        }
+    }
+    .footer {
+        padding: 100px 0 40px 0;
+        form {
+            margin-bottom: 140px;
+        }
+        &__phone {
+            font-size: 80px;
+            line-height: 80px;
+        }
+        &__email {
+            font-size: 34px;
+        }
+        &-box {
+            margin-top: 140px;
+        }
+        &-sub {
+            margin-top: 50px;
+            padding-top: 40px;
+        }
     }
 }
 
 @media (max-width: 768px) {
- 
+    .main {
+        &-brends {
+            &-item {
+                height: 150px;
+            }
+        }
+    }
+    .footer {
+        padding: 100px 0 40px 0;
+        form {
+            margin-bottom: 140px;
+        }
+        &__phone {
+            font-size: 60px;
+            line-height: 80px;
+        }
+        &__email {
+            font-size: 28px;
+        }
+        &-box {
+            margin-top: 140px;
+        }
+        &-sub {
+            margin-top: 50px;
+            padding-top: 40px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -468,15 +520,34 @@
         &-list {
         &-info {
             &-box {
-                padding: 5px;
+                padding: 2px 1px 0 7px;
                 &__text {
-                    font-size: 10px;
+                    font-size: 11px;
                 }
             }
         }
         &-text {
             padding: 10px 25px;
         }
+        }
+        
+        &-brends {
+            &-item {
+                height: 120px;
+            }
+        }
+        &-openAll {
+            height: 150px;
+    
+            &__btn {
+                font-size: 16px;
+                &::before {
+                    margin-right: 10px;
+                }
+            }
+            .project-archive__btn {
+                font-size: 16px;
+            }
         }
     }
     .main-list-big {
@@ -485,6 +556,30 @@
             height: 200px !important;
             .main-list-info-box__text {
                 width: 50%;
+            }
+        }
+    }
+    
+    .footer {
+        padding: 100px 0 25px 0;
+        form {
+            margin-bottom: 80px;
+        }
+        &__phone {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        &__email {
+            font-size: 22px;
+        }
+        &-box {
+            margin-top: 80px;
+        }
+        &-sub {
+            margin-top: 50px;
+            padding-top: 25px;
+            &__text {
+                font-size: 9px;
             }
         }
     }

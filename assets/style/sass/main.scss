@@ -527,7 +527,7 @@ a {
             background-color: #fff;
             bottom: -100%;
             left: 0;
-            padding: 20px;
+            padding: 20px 20px 0 20px;
             transition: .5s all;
             z-index: 2;
             &__text {
@@ -555,11 +555,267 @@ a {
         .main-list-info {
             height: 300px;
             .main-list-info-box__text {
-                width: 50%;
+                width: 50%; 
             }
         }
     }
+
+    &-brends {
+        width: 100%;
+        background-color: #20222b;
+        &-item {
+            width: 12.5%;
+            height: 200px;
+            overflow: hidden;
+            &__img {
+                background-size: 100% 100%;
+            }
+            &-info {
+                background-color: #fff;
+                top: 100%;
+                padding-bottom: 25px;
+                z-index: 1;
+                transition: .3s ease-in;
+                text-align: center;
+            }
+            &:hover .main-brends-item-info{
+                top: 0;
+            }
+        }
+    }
+    .main-all {
+        transition: 1s all;
+        height: 0;
+        overflow: hidden;
+    }
+    .showMainAll {
+        height: auto;
+    }
+
+    &-openAll {
+        width: 100%;
+        height: 200px;
+        background-color: #20222b;
+        position: relative;
+
+        &__btn {
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            &::before {
+                content: '+';
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: transparent;
+                border: 1px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                font-family: serif;
+                font-weight: 100;
+                margin-right: 20px;
+            }
+        }
+        .project-archive__btn {
+            width: auto;
+            height: auto;
+            padding: 5px 15px;
+            background: transparent;
+            border: 1px solid white;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+        &-line,
+        &-line_mob {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: 1s ease-in-out;
+        }
+        &-line_mob {
+            width: 100%;
+        }
+    }
 }
+// End Main
+
+.footer {
+    width: 100%;
+    padding: 150px 0 40px 0;
+    background-color: #20222b;
+    .to-order {
+        padding: 5px 10px;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        border: 1px solid #9d9d9c;
+        color: #9d9d9c;
+        border-radius: 25px;
+        font-weight: 400;
+        font-size: 12px;
+        display: inline-block;
+        margin-top: 5px;
+        &:hover {
+            background-color: #4c5366;
+            color: #fff;
+        }
+    }
+    
+    form {
+        .form__box {
+            position: relative;
+            width: 100%;
+            height: auto;
+
+            .form__label {
+                position: absolute;
+                bottom: 30px;
+                left: 0px;
+                font-size: 18px;
+                transition: .3s;
+                color: #9d9d9c;
+            }
+
+            #userName {
+                text-transform: capitalize;
+            }
+            small {
+                position: absolute;
+                font-family: sans-serif;
+                bottom: -2px;
+                left: 0px;
+                color: red;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        .form__inp {
+            width: 100%;
+            height: 60px;
+            border: none;
+            border: none;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            outline: none;
+            font-size: 18px;
+            transition: .5s;
+            background: transparent;
+            font-weight: 400;
+
+            &:focus {
+                border-bottom: 1px solid #fff;
+                background: transparent !important;
+            }
+            &:active {
+                background: transparent !important;
+            }
+
+            &:focus ~ .form__label,
+            &:not(:placeholder-shown) ~ .form__label {
+                bottom: 70px;
+                background-color: transparent;
+                font-size: 12px;
+                padding: 0 5px;
+            }
+
+        }
+
+        .form__btn {
+            width: auto;
+            height: auto;
+            padding: 5px 20px;
+            border-radius: 20px;
+            margin-top: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            background-color: transparent;
+            color: #fff;
+            transition: .3s;
+            border: 1px solid #fff;
+        }
+    }
+    &__phone {
+        font-size: 85px;
+        line-height: 90px;
+    }
+    &__email {
+        font-size: 34px;
+    }
+    &__btn {
+        padding: 5px 20px;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 35px;
+    }
+    &-box {
+        margin-top: 100px;
+    }
+    &-link_line {
+        width: 100%;
+        height: 1px;
+        background-color: #9d9d9c;
+        margin-bottom: 10px;
+    }
+    &-list {
+        &__link {
+            font-size: 12px;
+            color: #9d9d9c;
+            &:hover {
+                color: #4c5366;
+            }
+        }
+    }
+    &-icons {
+        margin-top: 80px;
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #9d9d9c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+    &-sub {
+        margin-top: 100px;
+        padding-top: 40px;
+        &__text {
+            font-size: 12px;
+        }
+        .gray_text {
+            color: #9d9d9c;
+        }
+        &-line,
+        &-line_mob {
+            width: 0%;
+            height: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            transition: 1s ease-in;
+        }
+        &-line_mob {
+            width: 100%;
+        }
+    }
+}
+// End footer
+
+
+
+
+
 
 .slick-dots {
     position: absolute;
