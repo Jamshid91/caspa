@@ -316,6 +316,7 @@ a {
         right: 0;
     }
 }
+// End wrapper
 
 
 .reliability,
@@ -721,7 +722,7 @@ a {
 
             &:focus ~ .form__label,
             &:not(:placeholder-shown) ~ .form__label {
-                bottom: 70px;
+                bottom: 60px;
                 background-color: transparent;
                 font-size: 12px;
                 padding: 0 5px;

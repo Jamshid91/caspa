@@ -927,7 +927,7 @@ a {
 
 .footer form .form__inp:focus ~ .form__label,
 .footer form .form__inp:not(:placeholder-shown) ~ .form__label {
-  bottom: 70px;
+  bottom: 60px;
   background-color: transparent;
   font-size: 12px;
   padding: 0 5px;
