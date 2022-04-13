@@ -46,10 +46,10 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     gsap.from('.footer__email', { opacity: 0, duration: .4, delay: 1.1, y: 40, scrollTrigger: '.footer-box'});
     gsap.from('.formBtn', { opacity: 0, duration: .4, delay: 1.5, y: 20, scrollTrigger: '.footer-box'});
     gsap.from('.footerLink1', { opacity: 0, duration: .5, delay: .2, y: 20, scrollTrigger: '.footer-icons'});
-    gsap.from('.footerLink2', { opacity: 0, duration: .5, delay: .4, y: 20, scrollTrigger: '.footer-icons'});
-    gsap.from('.footerLink3', { opacity: 0, duration: .5, delay: .6, y: 20, scrollTrigger: '.footer-icons'});
-    gsap.from('.footerLink4', { opacity: 0, duration: .5, delay: .8, y: 20, scrollTrigger: '.footer-icons'});
-    gsap.from('.footerLink5', { opacity: 0, duration: .5, delay: 1, y: 20, scrollTrigger: '.footer-icons'});
-    gsap.from('.footerLink6', { opacity: 0, duration: .5, delay: 1.2, y: 20, scrollTrigger: '.footer-icons'});
-    gsap.from('.footerLink7', { opacity: 0, duration: .5, delay: 1.4, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink2', { opacity: 0, duration: .3, delay: .3, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink3', { opacity: 0, duration: .3, delay: .4, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink4', { opacity: 0, duration: .3, delay: .5, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink5', { opacity: 0, duration: .3, delay: .6, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink6', { opacity: 0, duration: .3, delay: .7, y: 20, scrollTrigger: '.footer-icons'});
+    gsap.from('.footerLink7', { opacity: 0, duration: .3, delay: .8, y: 20, scrollTrigger: '.footer-icons'});
   }
