@@ -2,7 +2,21 @@ let navLine = document.querySelector('.nav-line'),
     menuBurger = document.querySelector('.nav-menu-burger'),
     closeMenu = document.querySelector('.close-menu'),
     menuItem = document.querySelector('.menu-item'),
-    sliders = document.querySelectorAll('.slider-item')
+    sliders = document.querySelectorAll('.slider-item'),
+    navbar = document.querySelector('.wrapper .nav')
+
+let lastScrollTop = 0;
+
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if(scrollTop > lastScrollTop) {
+    navbar.style.top = '-100px'
+  } else {
+    navbar.style.top = '0'
+  }
+  lastScrollTop = scrollTop
+})
 
 
 
@@ -51,6 +65,8 @@ const stability2 = document.querySelector('.stability2-right');
 const completedProjects = document.querySelector('.completed-projects-left');
 const openAllLine = document.querySelector('.main-openAll-line');
 const footerLine = document.querySelector('.footer-sub-line');
+const arrow = document.querySelector('.completed-projects-left-arrow');
+const completedItem = document.querySelector('.completed-projects-right-item');
 
 
 if (window.matchMedia("(min-width: 992px)").matches) {
@@ -65,6 +81,7 @@ if (window.matchMedia("(min-width: 992px)").matches) {
         const positionCompletedProjects = completedProjects.getBoundingClientRect().top;
         const positionOpenAllLine = openAllLine.getBoundingClientRect().top;
         const positionFooterLine = footerLine.getBoundingClientRect().top;
+        const positionCompletedItem = completedItem.getBoundingClientRect().top;
     
         const screenPosition = window.innerHeight;
     
@@ -85,6 +102,9 @@ if (window.matchMedia("(min-width: 992px)").matches) {
           }
           if(screenPosition > positionFooterLine) {
             footerLine.classList.add('w-100')
+          }
+          if(screenPosition > positionCompletedItem) {
+            arrow.classList.add('arrowScale')
           }
     });
 }
