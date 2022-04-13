@@ -1162,7 +1162,7 @@ width: 100%;
 }
 
 
-@media (max-width: 2800px) {
+@media (max-width: 3000px) {
   .wrapper__title {
     font-size: 80px;
     line-height: 100px;
