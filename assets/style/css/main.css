@@ -1164,12 +1164,59 @@ width: 100%;
 
 @media (max-width: 3000px) {
   .wrapper__title {
+    font-size: 100px;
+    line-height: 120px;
+  }
+  .wrapper__text,
+  .wrapper__sub-title {
+    font-size: 40px;
+  }
+  .main-list {
+    height: 500px;
+  }
+  .main-list-text {
+    font-size: 25px;
+  }
+  .main-list-info-box__text {
+    font-size: 18px;
+  }
+  .main-list-info {
+    height: 250px;
+  }
+  
+  .main-list-text {
+    height: 250px;
+  }
+  
+  .main .big-list {
+    height: 750px;
+  }
+  
+  .main .big-list-info {
+    height: 500px;
+  }
+  
+  .main .main-list-big {
+    height: 750px;
+  }
+  
+  .main .main-list-big .main-list-info {
+    height: 500px;
+  }
+
+  
+  .main-brends-item {
+    height: 240px;
+  }
+}
+@media (max-width: 2500px) {
+  .wrapper__title {
     font-size: 80px;
     line-height: 100px;
   }
   .wrapper__text,
   .wrapper__sub-title {
-    font-size: 24px;
+    font-size: 30px;
   }
   .main-list {
     height: 500px;
@@ -1822,7 +1869,7 @@ width: 100%;
     padding: 2px 1px 0 7px;
   }
   .main-list-info-box__text {
-    font-size: 11px;
+    font-size: 10px;
   }
   .main-list-text {
     padding: 10px 25px;
