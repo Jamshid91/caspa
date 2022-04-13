@@ -55,7 +55,7 @@ a {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 2800px;
 }
 
 .whatsapp {
@@ -1159,6 +1159,151 @@ width: 100%;
 
 .slick-dots li.slick-active {
   border: 1px solid #20232a !important;
+}
+
+
+@media (max-width: 2800px) {
+  .wrapper__title {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .wrapper__text,
+  .wrapper__sub-title {
+    font-size: 24px;
+  }
+  .main-list {
+    height: 500px;
+  }
+  .main-list-text {
+    font-size: 25px;
+  }
+  .main-list-info-box__text {
+    font-size: 18px;
+  }
+  .main-list-info {
+    height: 250px;
+  }
+  
+  .main-list-text {
+    height: 250px;
+  }
+  
+  .main .big-list {
+    height: 750px;
+  }
+  
+  .main .big-list-info {
+    height: 500px;
+  }
+  
+  .main .main-list-big {
+    height: 750px;
+  }
+  
+  .main .main-list-big .main-list-info {
+    height: 500px;
+  }
+
+  
+  .main-brends-item {
+    height: 240px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .wrapper__title {
+    font-size: 65px;
+    line-height: 80px;
+  }
+  .wrapper__text,
+  .wrapper__sub-title {
+    font-size: 20px;
+  }
+  .main-list {
+    height: 400px;
+  }
+  .main-list-text {
+    font-size: 22px;
+  }
+  .main-list-info-box__text {
+    font-size: 16px;
+  }
+  .main-list-info {
+    height: 200px;
+  }
+  
+  .main-list-text {
+    height: 200px;
+  }
+  
+  .main .big-list {
+    height: 600px;
+  }
+  
+  .main .big-list-info {
+    height: 400px;
+  }
+  
+  .main .main-list-big {
+    height: 600px;
+  }
+  
+  .main .main-list-big .main-list-info {
+    height: 400px;
+  }
+
+  
+  .main-brends-item {
+    height: 220px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper__title {
+    font-size: 58px;
+    line-height: 68px;
+  }
+  .wrapper__text,
+  .wrapper__sub-title {
+    font-size: 16px;
+  }
+  .main-list {
+    height: 300px;
+  }
+  .main-list-text {
+    font-size: 18px;
+  }
+  .main-list-info-box__text {
+    font-size: 13px;
+  }
+  .main-list-info {
+    height: 150px;
+  }
+  
+  .main-list-text {
+    height: 150px;
+  }
+  
+  .main .big-list {
+    height: 450px;
+  }
+  
+  .main .big-list-info {
+    height: 300px;
+  }
+  
+  .main .main-list-big {
+    height: 450px;
+  }
+  
+  .main .main-list-big .main-list-info {
+    height: 300px;
+  }
+
+  
+  .main-brends-item {
+    height: 190px;
+  }
 }
 
 @media (max-width: 992px) {
